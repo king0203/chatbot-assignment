@@ -29,7 +29,7 @@ class ActionProvider {
     }));
   };
 
-  handleUserInput = (age) => {
+  handleInput = (age) => {
     this.setState((prev) => {
       let botMessage;
 
@@ -54,8 +54,8 @@ class ActionProvider {
             messages: [...prev.messages, this.createChatBotMessage("Chat completed.", {})],
           }));
           // Navigate to the success page
-          this.navigate("/success");
-        }, 300);
+          this.navigate("/done");
+        }, 5000);
         
       } else {
         // If the age is null or empty (not provided), then return the previous state

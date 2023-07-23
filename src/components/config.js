@@ -1,7 +1,7 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import GotIt from "./GotIt/GotIt.jsx";
 import Age from "./Age/Age.jsx";
-
+import avatar  from './avatar.png'
 const config = {
   botName: "Student Info System Bot",
   initialMessages: [
@@ -9,6 +9,10 @@ const config = {
       widget: "gotIt",
     }),
   ],
+  customComponents: {
+    botAvatar: (props) => <img src={avatar} className="w-12 h-12" alt="bot" {...props} />,
+  },
+  
   widgets: [
     {
       widgetName: "gotIt",

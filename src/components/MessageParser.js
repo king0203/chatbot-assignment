@@ -8,7 +8,7 @@ class MessageParser {
       if (message.toLowerCase().includes("got it!")) {
         this.actionProvider.handleGotIt();
       } else {
-        this.actionProvider.handleUserInput();
+        this.actionProvider.handleInput();
       }
     }
   }
