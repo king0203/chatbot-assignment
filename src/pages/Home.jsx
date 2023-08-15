@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Page = () => {
+const Home = () => {
   const navigate = useNavigate();
 
   const handleEnrollNowClick = () => {
@@ -24,4 +24,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Home;

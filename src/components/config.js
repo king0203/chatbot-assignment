@@ -12,7 +12,7 @@ const config = {
   customComponents: {
     botAvatar: (props) => <img src={avatar} className="w-12 h-12" alt="bot" {...props} />,
   },
-  
+
   widgets: [
     {
       widgetName: "gotIt",
